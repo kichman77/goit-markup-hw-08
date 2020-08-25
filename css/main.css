@@ -854,8 +854,6 @@ input {
 }
 
 .modal-form-label {
-  display: flex;
-  align-items: center;
   margin-bottom: 30px;
   cursor: pointer;
 }
