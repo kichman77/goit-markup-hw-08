@@ -1,3 +1,7 @@
+.header-address-item:not(:last-child) {
+	margin-bottom: 16px;
+}
+
 .address .link {
 	text-decoration: none;
 	color: $title-text-color;
