@@ -47,25 +47,39 @@
 .menu-btn.is-open .menu-btn-burger {
 	display: none;
 }
-// .header {
-// 	display: flex;
 
-// 	border-bottom: 1px solid #ececec;
-// }
-// .header .container {
-// 	display: flex;
-// 	align-items: center;
-// }
-// .header-address-list {
-// 	display: flex;
-// 	margin-left: auto;
-// }
+@media screen and (min-width: 768px) {
+	.container {
+		width: 768px;
+	}
+	.header {
+		display: flex;
+	}
 
-// .header-contacts {
-// 	margin-right: 10px;
-// }
+	.menu-btn {
+		display: none;
+	}
+	.header .container {
+		display: flex;
+		align-items: center;
+	}
+	.menu-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-// .header-address-item:hover,
-// .header-address-item:focus {
-// 	fill: $accent-color;
-// }
+	.header-address-list {
+		display: flex;
+		margin-left: auto;
+	}
+}
+
+.header-contacts {
+	margin-right: 10px;
+}
+
+.header-address-item:hover,
+.header-address-item:focus {
+	fill: $accent-color;
+}

@@ -33,3 +33,12 @@
 .address-text {
 	color: $primary-text-color;
 }
+@media screen and (min-width: 768px) {
+	.container {
+		width: 768px;
+	}
+	.header-address-list {
+		display: block;
+		flex-wrap: nowrap;
+	}
+}
