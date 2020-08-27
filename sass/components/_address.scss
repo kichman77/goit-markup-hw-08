@@ -1,6 +1,6 @@
-.header-address-item:not(:last-child) {
-	margin-bottom: 16px;
-}
+// .header-address-item:not(:last-child) {
+// 	// margin-bottom: 16px;
+// }
 
 .address .link {
 	text-decoration: none;
@@ -30,6 +30,10 @@
 	font-size: 14px;
 	line-height: 1.71;
 }
+
+.header-address-list {
+	margin-right: 140px;
+}
 .address-text {
 	color: $primary-text-color;
 }
@@ -38,7 +42,8 @@
 		width: 768px;
 	}
 	.header-address-list {
-		display: block;
+		display: flex;
+		justify-content: center;
 		flex-wrap: nowrap;
 	}
 }

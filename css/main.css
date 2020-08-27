@@ -80,7 +80,7 @@ address {
     text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: turquoise;
+    background-color: #ffffff;
     display: none;
   }
   .menu-wrapper.is-open {
@@ -200,6 +200,20 @@ address {
     color: #212121;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .site-nav .link {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #212121;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  .site-nav .link:hover, .site-nav .link:focus {
+    color: #2196f3;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -230,8 +244,31 @@ address {
   color: #2196f3;
 }
 
-.header-address-item:not(:last-child) {
-  margin-bottom: 16px;
+.site-nav .link::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -33px;
+  content: "";
+  opacity: 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: -webkit-fill-available;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+}
+
+.site-nav .link:hover::after,
+.site-nav .link:focus::after {
+  opacity: 1;
+}
+
+.current .link::after {
+  opacity: 1;
+}
+
+.current .link {
+  color: #2196f3;
 }
 
 .address .link {
@@ -260,6 +297,10 @@ address {
   line-height: 1.71;
 }
 
+.header-address-list {
+  margin-right: 140px;
+}
+
 .address-text {
   color: #212121;
 }
@@ -269,7 +310,8 @@ address {
     width: 768px;
   }
   .header-address-list {
-    display: block;
+    display: flex;
+    justify-content: center;
     flex-wrap: nowrap;
   }
 }
