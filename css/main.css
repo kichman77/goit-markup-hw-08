@@ -74,7 +74,7 @@ address {
 @media screen and (max-width: 767px) {
   .menu-wrapper {
     position: absolute;
-    top: 60px;
+    top: 62px;
     right: 0;
     width: 100%;
     text-align: center;
@@ -272,6 +272,7 @@ address {
 }
 
 .address .link {
+  display: block;
   text-decoration: none;
   color: #757575;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -285,24 +286,12 @@ address {
   color: #2196f3;
 }
 
-.header-address-item:last-child {
-  margin-left: 30px;
-}
-
-.address {
-  display: flex;
-  margin-left: auto;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-.header-address-list {
-  margin-right: 140px;
-}
-
-.address-text {
+.address .link .address-text {
   color: #212121;
+}
+
+.header-address-item:first-child {
+  margin-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) {
