@@ -1,5 +1,6 @@
 .filter-button-list {
-	display: flex;
+	display: inline-flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	margin-bottom: 50px;
 }

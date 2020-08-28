@@ -12,8 +12,8 @@
 
 .box-list {
 	margin-top: 20px;
-	padding-left: 124px;
-	padding-right: 124px;
+	// padding-left: 124px;
+	// padding-right: 124px;
 	text-align: center;
 	// justify-content: start;
 }
@@ -29,8 +29,8 @@
 .footer-socials-box {
 	justify-content: center;
 	align-content: center;
-	padding-right: 137px;
-	padding-left: 137px;
+	// padding-right: 137px;
+	// padding-left: 137px;
 	margin-top: 60px;
 	margin-bottom: 60px;
 	// width: 206px;
@@ -50,6 +50,7 @@
 
 .footer-socials-list {
 	display: flex;
+	justify-content: center;
 	margin-top: 20px;
 }
 .footer-socials-item {
@@ -87,7 +88,8 @@
 }
 
 .mail-form {
-	width: 450px;
+	width: 100%;
+	max-width: 450px;
 	height: 50px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	box-sizing: border-box;
@@ -95,7 +97,7 @@
 	border-radius: 4px;
 	background-color: $footer-bg-color;
 	padding-left: 16px;
-	margin-right: 12px;
+	// margin-right: 15px;
 }
 
 .footer-button {
@@ -121,3 +123,9 @@
 	fill: $white-color;
 	margin-left: 10px;
 }
+
+// .footer.container { для десктопа и таблета
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-items: baseline;
+// }
