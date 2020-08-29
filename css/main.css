@@ -525,8 +525,11 @@ address {
   justify-content: center;
 }
 
-.product {
-  display: none;
+@media screen and (min-width: 1200px) {
+  .product {
+    width: calc((100% - 30px) / 3);
+    padding: 94px 0;
+  }
 }
 
 .product-list {
