@@ -447,6 +447,12 @@ address {
     width: 270px;
     height: 120px;
   }
+  .advantages-list {
+    flex-flow: row;
+  }
+  .advantages-item-title {
+    text-align: start;
+  }
 }
 
 .team {
