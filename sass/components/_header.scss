@@ -72,6 +72,10 @@
 		display: flex;
 		align-items: center;
 	}
+	// .header-container {
+	// 	display: flex;
+	// 	flex-flow: row;
+	// }
 	.menu-wrapper {
 		display: flex;
 		justify-content: center;
@@ -81,6 +85,7 @@
 	.header-address-list {
 		display: flex;
 		margin-left: auto;
+		font-size: 12px;
 	}
 }
 

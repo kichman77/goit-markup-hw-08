@@ -148,6 +148,7 @@ address {
   .header-address-list {
     display: flex;
     margin-left: auto;
+    font-size: 12px;
   }
 }
 
@@ -237,8 +238,12 @@ address {
 }
 
 @media screen and (min-width: 768px) {
+  .site-nav-item:not(:last-child) {
+    margin-right: 50px;
+  }
   .site-nav {
     display: flex;
+    margin-right: 76px;
   }
   .site-nav-item .link {
     display: block;
@@ -287,7 +292,7 @@ address {
 }
 
 .header-address-item:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .address .link {
@@ -313,7 +318,13 @@ address {
   }
   .header-address-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column;
+  }
+  .address {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header-address-list {
     margin-left: auto;
   }
 }
