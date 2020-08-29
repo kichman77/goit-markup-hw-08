@@ -253,7 +253,8 @@ address {
   }
   .header .container {
     display: flex;
-    align-items: center;
+    flex-flow: row;
+    justify-content: space-between;
   }
   .logo {
     margin-right: 88px;
@@ -305,6 +306,9 @@ address {
   .site-nav {
     margin-right: 305px;
   }
+  .site-nav .link::after {
+    bottom: -20px;
+  }
 }
 
 .hero {
@@ -320,7 +324,7 @@ address {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 200px 0;
+    padding: 280px 0 200px;
   }
 }
 
@@ -1063,7 +1067,6 @@ input {
 }
 
 .check-svg {
-  display: none;
   position: absolute;
   width: 16px;
   height: 15px;
@@ -1082,5 +1085,19 @@ input {
   color: #2196f3;
   text-decoration: underline;
   margin-left: 5px;
+}
+
+@media screen and (min-width: 528px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+  }
+  .modal-form {
+    padding: 0;
+  }
+  .modal-form-title {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -194,7 +194,6 @@ input {
 }
 
 .check-svg {
-	display: none;
 	position: absolute;
 	width: 16px;
 	height: 15px;
@@ -213,4 +212,18 @@ input {
 	color: $accent-color;
 	text-decoration: underline;
 	margin-left: 5px;
+}
+@media screen and (min-width: 528px) {
+	.modal {
+		width: 528px;
+		height: 581px;
+		padding: 40px;
+	}
+
+	.modal-form {
+		padding: 0;
+	}
+	.modal-form-title {
+		margin: 0;
+	}
 }

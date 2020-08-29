@@ -206,7 +206,8 @@
 	}
 	.header .container {
 		display: flex;
-		align-items: center;
+		flex-flow: row;
+		justify-content: space-between;
 	}
 
 	.logo {
@@ -263,5 +264,8 @@
 	}
 	.site-nav {
 		margin-right: 305px;
+	}
+	.site-nav .link::after {
+		bottom: -20px;
 	}
 }
