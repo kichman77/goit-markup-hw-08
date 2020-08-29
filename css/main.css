@@ -151,6 +151,12 @@ address {
   fill: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .navigation {
     margin-bottom: 60px;
@@ -612,7 +618,7 @@ address {
   text-align: center;
 }
 
-.box-item {
+.box-item:not(:last-child) {
   margin-bottom: 8px;
 }
 
@@ -719,8 +725,9 @@ address {
 .filter-button-list {
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: start;
+  align-items: baseline;
+  margin-bottom: 40px;
 }
 
 .filter-button {
@@ -743,6 +750,10 @@ address {
 
 .filter-button-item:not(:last-child) {
   margin-right: 8px;
+}
+
+.filter-button-item:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .portfolio-list {
@@ -841,8 +852,8 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  width: 100%;
+  height: 100%;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -910,6 +921,7 @@ address {
   padding-right: 40px;
   padding-bottom: 40px;
   padding-left: 40px;
+  font-size: 12px;
   border-color: transparent;
 }
 
@@ -943,6 +955,7 @@ textarea {
 .modal-textarea {
   display: flex;
   width: 100%;
+  height: 120px;
   padding-top: 12px;
   padding-right: 16px;
   padding-bottom: 12px;
@@ -960,6 +973,7 @@ input {
 .modal-form-text {
   display: flex;
   width: 100%;
+  height: 40px;
   padding-top: 12px;
   padding-right: 48px;
   padding-bottom: 12px;
@@ -992,12 +1006,13 @@ input {
 
 .checkbox {
   position: relative;
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .modal-form-label {
-  margin-bottom: 30px;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -1011,7 +1026,6 @@ input {
   height: 15px;
   border: 1px solid #212121;
   border-radius: 4px;
-  margin-right: 8.38px;
 }
 
 .modal-form-checkbox {
@@ -1019,7 +1033,6 @@ input {
   height: 1px;
   margin: 1px;
   border: 0;
-  padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -1032,6 +1045,7 @@ input {
   top: 1px;
   border-radius: 2px;
   fill: #ffffff;
+  margin-right: 8px;
 }
 
 .modal-form-checkbox:focus ~ .check-svg {
@@ -1041,5 +1055,6 @@ input {
 .modal-form-link {
   color: #2196f3;
   text-decoration: underline;
+  margin-left: 5px;
 }
 /*# sourceMappingURL=main.css.map */

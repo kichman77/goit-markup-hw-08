@@ -83,3 +83,8 @@
 .header-address-item:focus {
 	fill: $accent-color;
 }
+@media screen and (min-width: 768px) {
+	.container {
+		width: 768px;
+	}
+}

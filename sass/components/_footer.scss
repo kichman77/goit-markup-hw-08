@@ -17,7 +17,7 @@
 	text-align: center;
 	// justify-content: start;
 }
-.box-item {
+.box-item:not(:last-child) {
 	margin-bottom: 8px;
 }
 
