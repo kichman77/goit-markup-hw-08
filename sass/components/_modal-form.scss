@@ -84,12 +84,13 @@
 
 .modal-form-list {
 	position: relative;
+	margin-bottom: 10px;
 }
 
 .modal-svg {
 	position: absolute;
-	top: 40px;
-	left: 10px;
+	top: 32px;
+	left: 16px;
 }
 
 .modal-form-list:focus-within svg {
@@ -162,13 +163,14 @@ input {
 .checkbox {
 	position: relative;
 	display: block;
-	text-align: center;
+	text-align: left;
 	margin-bottom: 30px;
 }
 
 .modal-form-label {
 	width: 100%;
 	cursor: pointer;
+	padding-left: 30px;
 }
 
 .modal-form-label::before {
@@ -192,6 +194,7 @@ input {
 }
 
 .check-svg {
+	display: none;
 	position: absolute;
 	width: 16px;
 	height: 15px;
