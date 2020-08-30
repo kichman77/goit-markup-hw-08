@@ -464,21 +464,14 @@ address {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.team-item:nth-child(1),
-.team-item:nth-child(2) {
-  margin-bottom: 30px;
-}
-
-.team-item:nth-child(3) {
-  margin-bottom: 60px;
-}
-
-.photo-team {
-  width: 270px;
+@media sreen and (max-width: 767px) {
+  .team-item:nth-child(1),
+  .team-item:nth-child(2) {
+    margin-bottom: 30px;
+  }
+  .team-item:nth-child(3) {
+    margin-bottom: 60px;
+  }
 }
 
 .about-team {
@@ -538,6 +531,9 @@ address {
   }
   .team-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
+  }
+  .team-item:last-child {
+    padding-bottom: 0;
   }
 }
 
@@ -645,6 +641,9 @@ address {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+  .clients-item-title {
+    margin-bottom: 50px;
+  }
   .clients-item {
     width: calc((100% - 90px) / 3);
   }
