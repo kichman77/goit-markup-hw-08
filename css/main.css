@@ -373,6 +373,19 @@ address {
   color: #212121;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-wdth: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .advantages {
   padding-bottom: 0;
 }
@@ -534,6 +547,21 @@ address {
   }
   .team-item:last-child {
     padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-item-title {
+    margin-bottom: 50px;
+  }
+  .team-list {
+    display: flex;
+  }
+  .team-item {
+    width: calc((100% - 30px * 3) / 4);
+  }
+  .team-item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 

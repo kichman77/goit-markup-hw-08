@@ -83,3 +83,17 @@
 		padding-bottom: 0;
 	}
 }
+@media screen and (min-width: 1200px) {
+	.team-item-title {
+		margin-bottom: 50px;
+	}
+	.team-list {
+		display: flex;
+	}
+	.team-item {
+		width: calc((100% - 30px * 3) / 4);
+	}
+	.team-item:not(:last-child) {
+		margin-right: 30px;
+	}
+}
