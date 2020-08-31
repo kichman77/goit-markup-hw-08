@@ -488,6 +488,10 @@ address {
   }
 }
 
+.photo-team {
+  width: 270px;
+}
+
 .about-team {
   display: block;
   text-align: center;
@@ -1029,6 +1033,15 @@ address {
   padding-left: 24px;
   padding-bottom: 20px;
   padding-right: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    text-align: center;
+  }
+  .portfolio-item {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 .backdrop {
