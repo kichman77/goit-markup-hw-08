@@ -68,13 +68,14 @@ address {
 .header-fixed {
   position: fixed;
   width: 100%;
+  z-index: 100;
 }
 
 .header {
   border-bottom: 1px solid #ececec;
   background-color: #ffffff;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 26px;
+  padding-bottom: 25px;
 }
 
 .logo {
@@ -324,7 +325,7 @@ address {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 280px 0 200px;
+    padding: 360px 0 200px;
   }
 }
 
@@ -572,7 +573,7 @@ address {
 @media screen and (min-width: 1200px) {
   .product {
     display: flex;
-    padding: 94px 0;
+    padding-top: 0;
   }
   .product-list {
     display: flex;
@@ -722,17 +723,11 @@ address {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 767px) {
-  .footer {
-    display: flex;
-    align-items: center;
-  }
-  .footer-socials-box {
-    justify-content: center;
-    align-content: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
+.footer-socials-box {
+  justify-content: center;
+  align-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .logo-footer {
@@ -795,7 +790,8 @@ address {
 }
 
 .join {
-  justify-content: flex-start;
+  display: flex;
+  justify-content: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -805,9 +801,14 @@ address {
 
 .js-speaker-form {
   margin-top: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 .join-box {
+  display: flex;
+  justify-content: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -826,6 +827,7 @@ address {
   border-radius: 4px;
   background-color: #2f303a;
   padding-left: 16px;
+  margin-bottom: 15px;
 }
 
 .footer-button {
@@ -837,7 +839,6 @@ address {
   padding-right: 28px;
   padding-bottom: 10px;
   padding-left: 29px;
-  margin-top: 20px;
   background: #2196f3;
   border-color: #2196f3;
   color: #ffffff;
@@ -852,7 +853,7 @@ address {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
     display: flex;
     flex-wrap: wrap;
@@ -861,6 +862,7 @@ address {
   }
   .box-address {
     margin-left: 76px;
+    margin-bottom: 60px;
   }
   .footer-socials-box {
     margin-right: 89px;
@@ -869,8 +871,44 @@ address {
     margin-left: auto;
     margin-right: auto;
   }
+  .mail-form {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  .box-list {
+    text-align: start;
+  }
   .box-address {
-    margin-bottom: 60px;
+    margin-right: 70px;
+    text-align: start;
+  }
+  .footer-socials-box {
+    margin-right: 89px;
+  }
+  .footer-chek-box {
+    margin: 0;
+  }
+  .js-speaker-form {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  .mail-form {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+  .footer-button {
+    margin: 0;
   }
 }
 
@@ -908,9 +946,14 @@ address {
   margin-bottom: 15px;
 }
 
+.portfolio {
+  padding-top: 126px;
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .portfolio-item {
