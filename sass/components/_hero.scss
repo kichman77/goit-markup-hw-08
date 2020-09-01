@@ -1,7 +1,7 @@
 .hero {
   margin-right: auto;
   margin-left: auto;
-  padding: 118px 0;
+  padding: 178px 0 118px;
   background: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-Img.jpg);
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@
   background-position: center;
 
   @media screen and (min-width: 1200px) {
-    padding: 360px 0 200px;
+    padding: 280px 0 200px;
   }
 }
 

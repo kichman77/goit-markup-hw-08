@@ -74,8 +74,7 @@ address {
 .header {
   border-bottom: 1px solid #ececec;
   background-color: #ffffff;
-  padding-top: 26px;
-  padding-bottom: 25px;
+  padding: 10px 0;
 }
 
 .logo {
@@ -181,6 +180,7 @@ address {
 
 .header-contacts {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .header-address-item:hover,
@@ -251,6 +251,10 @@ address {
 @media screen and (min-width: 768px) {
   .header {
     display: flex;
+    padding: 14px 0;
+  }
+  .header-container {
+    display: flex;
   }
   .header .container {
     display: flex;
@@ -258,6 +262,7 @@ address {
     justify-content: space-between;
   }
   .logo {
+    display: flex;
     margin-right: 88px;
   }
   .menu-btn {
@@ -279,7 +284,7 @@ address {
     display: block;
   }
   .site-nav .link::after {
-    bottom: -32px;
+    bottom: -28px;
   }
   .header-address-list {
     display: flex;
@@ -293,6 +298,13 @@ address {
 }
 
 @media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.21;
+  }
+  .header {
+    padding: 24px 0;
+  }
   .header-address-list {
     flex-flow: row;
     align-items: baseline;
@@ -308,14 +320,14 @@ address {
     margin-right: 305px;
   }
   .site-nav .link::after {
-    bottom: -20px;
+    bottom: -28px;
   }
 }
 
 .hero {
   margin-right: auto;
   margin-left: auto;
-  padding: 118px 0;
+  padding: 178px 0 118px;
   background: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-Img.jpg);
   background-repeat: no-repeat;
@@ -325,7 +337,7 @@ address {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 360px 0 200px;
+    padding: 280px 0 200px;
   }
 }
 
@@ -372,12 +384,6 @@ address {
   line-height: 1.16;
   text-align: center;
   color: #212121;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .section {
-    margin-bottom: 60px;
-  }
 }
 
 @media screen and (min-wdth: 1200px) {
@@ -478,18 +484,17 @@ address {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media sreen and (max-width: 767px) {
-  .team-item:nth-child(1),
-  .team-item:nth-child(2) {
-    margin-bottom: 30px;
-  }
-  .team-item:nth-child(3) {
-    margin-bottom: 60px;
-  }
+.team-item:nth-child(1),
+.team-item:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.team-item:nth-child(3) {
+  margin-bottom: 60px;
 }
 
 .photo-team {
-  width: 270px;
+  width: 450px;
 }
 
 .about-team {
@@ -547,11 +552,14 @@ address {
   .team-item:not(:nth-child(2n)) {
     margin-right: 30px;
   }
+  .team-item:nth-child(3) {
+    margin-bottom: 0;
+  }
   .team-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
   .team-item:last-child {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -564,9 +572,14 @@ address {
   }
   .team-item {
     width: calc((100% - 30px * 3) / 4);
+    margin: 0;
   }
   .team-item:not(:last-child) {
     margin-right: 30px;
+  }
+  .team-item:not(:nth-last-child(-n + 2)),
+  .team-item:nth-child(3) {
+    margin-bottom: 0;
   }
 }
 
@@ -758,6 +771,10 @@ address {
   margin-bottom: 8px;
 }
 
+.box-item {
+  font-weight: 100;
+}
+
 .box-address {
   text-align: center;
 }
@@ -865,11 +882,11 @@ address {
     align-items: baseline;
   }
   .box-address {
-    margin-left: 76px;
+    margin-left: 61px;
     margin-bottom: 60px;
   }
   .footer-socials-box {
-    margin-right: 89px;
+    margin-right: 74px;
   }
   .footer-chek-box {
     margin-left: auto;
@@ -922,6 +939,7 @@ address {
   justify-content: start;
   align-items: baseline;
   margin-bottom: 40px;
+  font-size: 16px;
 }
 
 .filter-button {
@@ -946,8 +964,23 @@ address {
   margin-right: 8px;
 }
 
-.filter-button-item:not(:last-child) {
-  margin-bottom: 15px;
+@media screen and (max-width: 767px) {
+  .filter-button-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter-button-list {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-button-list {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .portfolio {
@@ -961,24 +994,21 @@ address {
 }
 
 .portfolio-item {
-  width: 370px;
   border: 1px solid #eeeeee;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-
-.portfolio-item:not(:nth-child(3n)):hover, .portfolio-item:not(:nth-child(3n)):focus {
+.portfolio-item:hover, .portfolio-item:focus {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .portfolio-item {
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio-item-title {
@@ -1035,12 +1065,37 @@ address {
   padding-right: 24px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio {
     text-align: center;
+    padding-top: 140px;
   }
   .portfolio-item {
     width: calc((100% - 30px) / 2);
+  }
+  .portfolio-item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .portfolio-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .portfolio-item:last-child {
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 174px;
+  }
+  .portfolio-item {
+    width: calc((100% - 60px) / 3);
+  }
+  .portfolio-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .portfolio-item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
   }
 }
 
@@ -1059,7 +1114,7 @@ address {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -35%);
   width: 100%;
   height: 100%;
   background: #ffffff;
@@ -1075,7 +1130,7 @@ address {
 .close-button {
   position: absolute;
   top: -40px;
-  right: 0;
+  right: -40px;
   width: 30px;
   height: 30px;
   border-radius: 50%;

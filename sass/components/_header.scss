@@ -9,8 +9,7 @@
 .header {
   border-bottom: 1px solid #ececec;
   background-color: $white-color;
-  padding-top: 26px;
-  padding-bottom: 25px;
+  padding: 10px 0;
 }
 
 .logo {
@@ -114,6 +113,7 @@
 
 .header-contacts {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .header-address-item:hover,
@@ -204,6 +204,10 @@
 @media screen and (min-width: 768px) {
   .header {
     display: flex;
+    padding: 14px 0;
+  }
+  .header-container {
+    display: flex;
   }
   .header .container {
     display: flex;
@@ -212,6 +216,7 @@
   }
 
   .logo {
+    display: flex;
     margin-right: 88px;
   }
   .menu-btn {
@@ -237,7 +242,7 @@
     display: block;
   }
   .site-nav .link::after {
-    bottom: -32px;
+    bottom: -28px;
   }
 
   .header-address-list {
@@ -252,6 +257,14 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.21;
+  }
+  .header {
+    padding: 24px 0;
+  }
+
   .header-address-list {
     flex-flow: row;
     align-items: baseline;
@@ -267,6 +280,6 @@
     margin-right: 305px;
   }
   .site-nav .link::after {
-    bottom: -20px;
+    bottom: -28px;
   }
 }
